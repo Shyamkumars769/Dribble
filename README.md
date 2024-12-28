@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:27-12-24
+## Date:28-12-24
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -28,172 +28,114 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 
 ```
-Home.html
-
 <html>
 <head>
-  <title>Dribbble - Home</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .custom-header { background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 40px 20px; text-align: center; }
-    .navbar { background-color: #343a40; padding: 15px; }
-    .navbar-brand { font-size: 1.8rem; color: white; }
-    .navbar .nav-link { color: white !important; margin-right: 15px; font-size: 1rem; }
-    footer { background-color: #343a40; color: white; text-align: center; padding: 20px 0; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <header class="custom-header">
-    <h1>Welcome to Dribbble</h1>
-    <p>Your destination for creative inspiration</p>
-  </header>
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="Home.html">Dribbble</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="Explore.html">Explore</a></li>
-          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="section">
-    <h2 class="text-center">Home Page</h2>
-    <p class="text-center">Welcome to Dribbble! Discover incredible art and designs from creators worldwide.</p>
-  </section>
-
-  <footer>
-    <p>Designed by Shyamkumar.S</p>
-  </footer>
-
-</body>
-</html>
-
-Explore.html
-
-<html>
-<head>
-  <title>Dribbble - Explore</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .custom-header { background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 40px 20px; text-align: center; }
-    .navbar { background-color: #343a40; padding: 15px; }
-    .navbar-brand { font-size: 1.8rem; color: white; }
-    .navbar .nav-link { color: white !important; margin-right: 15px; font-size: 1rem; }
-    .portfolio-section { background-color: #ffffff; padding: 60px 20px; }
-    .portfolio-item { text-align: center; margin-bottom: 30px; }
-    .portfolio-item img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 10px; }
-    footer { background-color: #343a40; color: white; text-align: center; padding: 20px 0; }
-  </style>
-</head>
-<body>
-
-  <header class="custom-header">
-    <h1>Explore Dribbble</h1>
-    <p>Explore the stunning designs and artworks created by talented artists</p>
-  </header>
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="Home.html">Dribbble</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="Explore.html">Explore</a></li>
-          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="portfolio-section">
-    <h2 class="text-center">Our Portfolio</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 portfolio-item">
-          <img src="Morden.avif" alt="Design 1">
-          <h5>Modern Art</h5>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">Dribbble</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Designers</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Projects</a></li>
+                </ul>
+                <input type="search" class="form-control w-auto me-3" placeholder="Search">
+                <a class="btn btn-outline-primary me-2" href="#">Sign in</a>
+                <a class="btn btn-primary" href="#">Sign Up</a>
+            </div>
         </div>
-        <div class="col-md-4 portfolio-item">
-          <img src="abstract.png" alt="Design 2">
-          <h5>Abstract Fusion</h5>
+    </nav>
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Showcase Your Creativity</h1>
+            <p class="lead">Find inspiration, connect with creatives, and share your designs with the world.</p>
+            <a href="#popular" class="btn btn-light btn-lg">Explore Now</a>
         </div>
-        <div class="col-md-4 portfolio-item">
-          <img src="Landscapes.jpg" alt="Design 3">
-          <h5>Creative Landscapes</h5>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Inspiration</h5>
+                            <p class="text-muted">Discover thousands of design ideas from top creatives worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Collaboration</h5>
+                            <p class="text-muted">Connect with other designers to bring your projects to life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Exposure</h5>
+                            <p class="text-muted">Showcase your best work and build your design portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Designed by Shyamkumar.S</p>
-  </footer>
-
-</body>
-</html>
-
-<html>
-<head>
-  <title>Dribbble - Contact</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .custom-header { background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 40px 20px; text-align: center; }
-    .navbar { background-color: #343a40; padding: 15px; }
-    .navbar-brand { font-size: 1.8rem; color: white; }
-    .navbar .nav-link { color: white !important; margin-right: 15px; font-size: 1rem; }
-    .contact-section { background-color: #f9f9f9; text-align: center; padding: 60px 20px; }
-    footer { background-color: #343a40; color: white; text-align: center; padding: 20px 0; }
-  </style>
-</head>
-<body>
-
-  <header class="custom-header">
-    <h1>Contact Dribbble</h1>
-    <p>We would love to hear from you!</p>
-  </header>
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="Home.html">Dribbble</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="Explore.html">Explore</a></li>
-          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <form>
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Your Name">
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Your Email">
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>Designed by Shyamkumar.S</p>
-  </footer>
-
+    </section>
+    <section id="popular" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Popular Shots</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="Landscapes.jpg" class="card-img-top" alt="Shot 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creative Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="unique.jpg" class="card-img-top" alt="Shot 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Unique Concepts</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="abstract.png" class="card-img-top" alt="Shot 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Innovative Ideas</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">designed by shyamkumar.S(24001160)</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
